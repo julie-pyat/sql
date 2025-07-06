@@ -1,7 +1,7 @@
 # Тестовое задание по знанию SQL (Microsoft SQL Server)
 
 ## Описание таблиц.
----
+
 
 Таблица [dbo].[booking] содержит брони.   
 id_booking [int]  - ID брони (уникальный ключ).  
@@ -27,9 +27,9 @@ id_currency [char](3) - валюта
 	[rate] [float] - курс валюты в рубли
  
 ## Создание таблиц
----
 
 
+```
 CREATE TABLE [dbo].[booking](
 	id_booking [int] NOT NULL PRIMARY KEY,
 	id_provider [int] NOT NULL,
@@ -70,9 +70,10 @@ CREATE TABLE [dbo].[currency_rate](
 	[date] [datetime] NOT NULL,
 	[rate] [float] NOT NULL
 )
+```
 
 ## Задания:
----
+
 
 ### 1. Создать view, где будет содержаться следующая информация:
 
